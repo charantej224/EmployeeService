@@ -15,7 +15,7 @@ public class EmployeeDetailsController {
 	@Autowired
 	ReferenceDataManager referenceDataManager;
 	
-	@GetMapping("/employees")
+	@GetMapping("/getEmployees")
 	public List<Employee> getEmployees(){
 		return referenceDataManager.getEmployeeList();
 	}
