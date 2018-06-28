@@ -9,6 +9,11 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8020/eureka
-      healthcheck:
-      enabled: true
-    registry-fetch-interval-seconds: 60
+    register-with-eureka: true
+    fetchRegistry: true
+  instance:
+    prefer-ip-address: true
+
+logging:
+  level:
+    com.charan.*: DEBUG
